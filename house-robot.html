@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118906743-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118906743-1');
+  </script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chadwyck Wirtz - Claire's Robot</title>
+  <meta name="description" content="The Website of Chadwyck Wirtz">
+  <meta name="author" content="chadwyckwirtz.com">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/chadwyckwirtz.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+ <!--  -->
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container header">
+    <div class="row">
+      <div class="eight columns">
+        <a href="index.html"><h4 class="section-heading header"><strong>CHADWYCK WIRTZ</strong></h4></a>
+      </div>
+      <div class="four columns inline">
+        <a href="about.html"><h6 class="section-heading header">ABOUT</h6></a>
+        <a href="resume.pdf"><h6 class="section-heading header">RESUME</h6></a>
+        <a href="mailto:chadwyckwirtz@chadwyckwirtz.com"><h6 class="section-heading header">CONTACT</h6></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <h3>Claire's Robot</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns my-description">
+        <h6>How tough could it be to design and build a robot with a seven year old?</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <img class="main-project-img" src="images/house_robot.JPG">
+      </div>
+  </div>
+
+  <div class="container u-full-width article-body">
+    <div class="row">
+      <div class="nine columns">
+        <h4>
+          Design Brief
+        </h4>
+        <h6>
+          This story starts with a drawing that my daughter created of a little robot that she received as a gift for Christmas. That drawing turned into a conversation on a long car ride home. We talked about how she imagined interacting with her little robot and the things that it could do. Along the way I suggested that maybe if we were clever we could design and create our own house robot. We discussed various characteristics that it could have, what it might look like and what it could do.
+        </h6>
+        <h6>
+          I wanted to build a robot, self contained and mobile, with voice interaction and computer vision. Claire wanted a robot that has a vacuum and an arm.
+        </h6>
+        <h4>
+          Our Robot Goals
+        </h4>
+        <ul>
+          <li>Has an arm</li>
+          <li>Has a vacuum</li>
+          <li>Can Listen</li>
+          <li>Can Speak</li>
+          <li>Can See</li>
+          <li>Can Move</li>
+        </ul>
+        <h4>
+          Design Documentation
+        </h4>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/drawing-5.JPG">
+          <h6>Version 1.0</h6>
+        </div>
+        <h6>
+          Version 1.0 design: <span style="text-decoration: line-through;">The robot can go fast</span> and has a remote control. Drawing by Claire.
+        </h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/drawing-1.JPG">
+          <h6>Robot Arm</h6>
+        </div>
+        <h6>
+          Detailed robot arm design and schematics by Claire.
+        </h6>
+        <h4>
+          Construction
+        </h4>
+        <h6>
+          Simple and made from materials available from the hardware store. Constructed from PVC pipe, lexan and aluminum stock.
+        </h6>
+        
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/base-1.JPG">
+          <h6>The Chassis</h6>
+        </div>
+        <h6>The chassis is a simple tank drive / caster setup using two optically encoded motors from a first generation Roomba.</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/base-2.JPG">
+          <h6>Head Bearing</h6>
+        </div>
+        <h6>The robot will have a head unit that can rotate roughly 90 degrees independently of the robots body</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/base-3.JPG">
+          <h6>Distance Sensor</h6>
+        </div>
+        <h6>The robot will use a simple ultrasonic distance sensor to detect obstacles. You can see the PVC cap that will become its head unit sitting on the right.</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/base-6.JPG">
+          <h6>Completed Chassis</h6>
+        </div>
+        <h6>Here is the completed chassis sitting on the workspace.</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/inside-1.JPG">
+          <h6>Arduino</h6>
+        </div>
+        <h6>The Arduino is used to control the motors via a simple motor controller board and read the motor encoders. It is also hooked up to the ping (utrasonic) sensor.</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/base-4.JPG">
+          <h6>Assembled Body</h6>
+        </div>
+        <h6>Everything fits nicely into 6 inch PVC pipe junction</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/base-5.JPG">
+          <h6>Raspberry Pi</h6>
+        </div>
+        <h6>The Raspberry pi will take care of sensing, networking and all other interactions.</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/head-1.JPG">
+          <h6>Head Unit</h6>
+        </div>
+        <h6>Inside the head unit you can see:</h6>
+        <ul>
+          <li>Color OLED screen</li>
+          <li>Rasperry Pi</li>
+          <li>Rasperry Pi Camera</li>
+          <li>Head rotation servo</li>
+          <li>USB Speaker</li>
+          <li>USB Microphone</li>
+        </ul>
+        <div class="minor-image-box">
+          <img class="minor-project-img" src="images/robot/head-2.JPG">
+          <h6>Head Unit Back</h6>
+        </div>
+        <h6></h6>
+        <h4>
+          Development
+        </h4>
+        <h5>
+          Motor controller
+        </h5>
+        <h6>I created a simple loop for the <a href="https://www.arduino.cc">Arduino</a> that reads commands from the serial port and detects changes in the optical sensors via an interrupt</h6>
+        <h5>
+          Eyes
+        </h5>
+        <h6>Detect a face using <a href="https://opencv.org/">OpenCV</a> and react to it</h6>
+        <h5>
+          Ears
+        </h5>
+        <h6><a href="http://snowboy.kitt.ai">Snowboy</a>, a hotword detection engine to listen for the robots name and forward the audio to the Google voice to text service. The robot will take and action if the response matches any of its commands.</h6>
+        <h5>
+          Mouth
+        </h5>
+        <h6>Espeak TTS for the robots voice. <a href="http://espeak.sourceforge.net">eSpeak</a> is a compact open source software speech synthesizer for English and other languages.</h6>
+        <h5>
+          Face
+        </h5>
+        <h6>Using <a href="https://github.com/rm-hull/luma.oled">luma.oled</a> to create a "happy" face for the robot.</h6>
+        <h4>
+          Testing
+        </h4>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Pass / Fail</th>
+              <th>Quality</th>
+              <th>Conclusion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Move Body</td>
+              <td>Pass</td>
+              <td>D</td>
+              <td>Motion commands are disregarded</td>
+            </tr>
+            <tr>
+              <td>Move Head</td>
+              <td>Pass</td>
+              <td>C</td>
+              <td>Head motor is very noisy</td>
+            </tr>
+            <tr>
+              <td>Detect Name</td>
+              <td>Pass</td>
+              <td>C</td>
+              <td>Speaker must be very loud</td>
+            </tr>
+            <tr>
+              <td>Detect People</td>
+              <td>Pass</td>
+              <td>D</td>
+              <td>Is very slow to detect</td>
+            </tr>
+            <tr>
+              <td>Following</td>
+              <td>Pass</td>
+              <td>D</td>
+              <td>Can follow a very patient person</td>
+            </tr>
+            <tr>
+              <td>Understand Commands</td>
+              <td>Pass</td>
+              <td>C</td>
+              <td>Response from VTT is slow</td>
+            </tr>
+            <tr>
+              <td>Robot Speech</td>
+              <td>Pass</td>
+              <td>D</td>
+              <td>Sounds like a robot</td>
+            </tr>
+            <tr>
+              <td>Display interactive face</td>
+              <td>Pass</td>
+              <td>B</td>
+              <td>Face is responsive and animates nicely</td>
+            </tr>
+            <tr>
+              <td>Intelligence</td>
+              <td>Fail</td>
+              <td>F</td>
+              <td>Does not appear to be intelligent</td>
+            </tr>
+            <tr>
+              <td>Engagement</td>
+              <td>Fail</td>
+              <td>F</td>
+              <td>Does not appear to be engaging for children or adults</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>
+          Important things that we learned
+        </h4>
+        <h6>
+          This robot could be much more interesting if developed further ;)
+        </h6>
+        <h4>
+          Next Steps
+        </h4>
+        <ul>
+          <li>Make an arm and attach it</li>
+          <li>Attach a vacuum</li>
+          <li>Add Intelligence</li>
+          <li>Install a battery</li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h5>MY ROLE</h5>
+        <ul>
+          <li>Technologist / Dad</li>
+        </ul>
+        <h5>TECH</h5>
+        <ul>
+          <li>Rasperry Pi</li>
+          <li>Kitt.ai</li>
+          <li>Snowboy</li>
+          <li>luma.oled</li>
+          <li>Google VTT</li>
+          <li>Arduino</li>
+          <li>OpenCV</li>
+          <li>Python</li>
+          <li>OpenPVC</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container u-full-width">
+    <div class="row">
+      <div class="column">
+        <h3></h3>
+        <a name=”contact”></a>
+        <p>
+          <a href="mailto:chadwyckwirtz@chadwyckwirtz.com">Email</a><br>
+          <a href="http://www.linkedin.com/in/chadwirtz/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118906743-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118906743-1');
+  </script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chadwyck Wirtz - ADS-B Mini</title>
+  <meta name="description" content="The Website of Chadwyck Wirtz">
+  <meta name="author" content="chadwyckwirtz.com">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/chadwyckwirtz.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+ <!--  -->
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container header">
+    <div class="row">
+      <div class="eight columns">
+        <a href="index.html"><h4 class="section-heading header"><strong>CHADWYCK WIRTZ</strong></h4></a>
+      </div>
+      <div class="four columns inline">
+        <a href="about.html"><h6 class="section-heading header">ABOUT</h6></a>
+        <a href="resume.pdf"><h6 class="section-heading header">RESUME</h6></a>
+        <a href="mailto:chadwyckwirtz@chadwyckwirtz.com"><h6 class="section-heading header">CONTACT</h6></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <h3>ADS-B Mini</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns my-description">
+        <h6>I live near the airport and I wanted to find out what airplanes are flying over my house</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <img class="main-project-img" src="images/ads-b/IMG_0063.JPG">
+      </div>
+  </div>
+
+  <div class="container u-full-width article-body">
+    <div class="row">
+      <div class="nine columns">
+        <h4>
+          Inspiration
+        </h4>
+        <h6>
+          I was inspired to create this project by another person who created an electronic marquee that would anounce the flight number of the nearest airplane flying <a href="http://jeremybmerrill.com/blog/2016/01/flyover.html">overhead</a>. From this project I discovered that it was fairly easy to use software defined radio to capture the data sent by most of the airplanes flying near my home. I ordered the cheapest SDR dongle and antenna that I could find on Amazon and installed <a href="https://github.com/mutability/dump1090">Dump1090</a> on a raspberry pi 2.
+        </h6>
+        <h6><a href="https://github.com/mutability/dump1090">Dump1090</a> can be configured to write json data to a directory used by a webserver, so I began my project by creating a python script to read the file when it was updated and print the list of detected airplanes in the console</h6>
+        <h6>I also had an extra 3.5" lcd touchscreen for the raspberry pi, so I decided that it would be fun to make a UI using <a href="https://www.pygame.org/news">pygame</a>. </h6>
+        <h4>
+          Project Goals
+        </h4>
+        <ul>
+          <li>Detect all airplanes in the sky transmitting their name and position</li>
+          <li>Display all detected airplanes on a moving map and in a list</li>
+          <li>Display information about an individual airplane on a moving map</li>
+        </ul>
+        <div class="minor-image-box">
+          <img class="minor-project-img small" src="images/ads-b/IMG_0061.JPG">
+          <h6>-</h6>
+        </div>
+        <h6>The airplane overview screen with vector graphics</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img small" src="images/ads-b/IMG_0064.JPG">
+          <h6>-</h6>
+        </div>
+        <h6>Another three airplanes detected </h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img small" src="images/ads-b/IMG_0078.JPG">
+          <h6>-</h6>
+        </div>
+        <h6>The airplane tracking screen</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img small" src="images/ads-b/IMG_0079.JPG">
+          <h6>-</h6>
+        </div>
+        <h6>The airplane list</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img small" src="images/ads-b/IMG_0080.JPG">
+          <h6>-</h6>
+        </div>
+        <h6>The airplane tracking screen with satellite graphics</h6>
+        <div class="minor-image-box">
+          <img class="minor-project-img small" src="images/ads-b/IMG_0081.JPG">
+          <h6>-</h6>
+        </div>
+        <h6>The airplane overview screen with satellite graphics</h6>
+        <h4>
+          Improvements?
+        </h4>
+        <ul>
+          <li>Add UAT</li>
+          <li>Add weather</li>
+          <li>Use a better display with a faster refresh rate</li>
+          <li>Create a better algorithm to render the map</li>
+          <li>Make a nice housing for it</li>
+        </ul>
+        <h4>
+          Retrospective
+        </h4>
+        <h6>Creating this document in May 2018 as a student pilot, it is easy to see that I never intended for this device to be used in an airplane. This is strictly something that I built as a hobbyist to explore an idea and learn about SDR, python and ADS-B.</h6>
+      </div>
+      <div class="three columns">
+        <h5>MY ROLE</h5>
+        <ul>
+          <li>Maker</li>
+        </ul>
+        <h5>TECH</h5>
+        <ul>
+          <li>Rasperry Pi</li>
+          <li>Python</li>
+          <li>PyGame</li>
+          <li>SDR</li>
+          <li>ADS-B</li>
+        </ul>
+        <h5>SOURCE</h5>
+        <a href="https://github.com/chadwyck-w/ui_flyby">ui_flyby</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container u-full-width">
+    <div class="row">
+      <div class="column">
+        <h3></h3>
+        <a name=”contact”></a>
+        <p>
+          <a href="mailto:chadwyckwirtz@chadwyckwirtz.com">Email</a><br>
+          <a href="http://www.linkedin.com/in/chadwirtz/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>

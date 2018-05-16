@@ -1,0 +1,246 @@
+@media (min-width: 550px) {
+  .myname {
+    text-align:right;
+  }
+}
+
+.header {
+    margin-top: 2rem;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.inline {
+  text-align: left;
+}
+
+@media (min-width: 550px) {
+  .inline {
+    text-align: right;
+  }
+}
+
+.inline a {
+  /*text-align: right;*/
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 0rem;
+  
+}
+
+.inline a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 550px) {
+  .inline a{
+    padding-right: 0rem;
+    padding-left: 1rem;
+  }
+}
+
+.header {
+  margin-top: 1rem;
+}
+
+@media (min-width: 550px) {
+  .header {
+    margin-top: 2rem;
+  }
+}
+
+.potato {
+  display: inline;
+}
+
+.my-description {
+  color:#666;
+}
+
+.my-description.my-home {
+  margin: 1rem auto 1rem auto;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  .my-description.my-home {
+    margin: 4rem auto 4rem auto;
+    text-align: center;
+  }
+}
+
+.article-body {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.which-box {
+  height: 300px;
+  border: 1px solid rgba(200,200,200,0.75);
+  overflow: hidden;
+}
+
+.child {
+  /*background-image: url("http://via.placeholder.com/400x300/AAAAAA?text=b");*/
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all .125s;
+  -moz-transition: all .125s;
+  -o-transition: all .125s;
+  transition: all .125s;
+}
+
+.child.contain {
+  background-size: contain;
+}
+
+.which-box .hover-text{
+    display: none;
+    font-size: 2.5rem;
+    color: #ffffff !important;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.which-box :hover .child, .which-box :focus .child {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(125,125,125,0.6);
+}
+
+.bg-house-robot {
+  background-image: url("../images/house_robot.JPG");
+}
+
+.bg-nokia-steel {
+  background-image: url("../images/steel-hr.jpeg");
+}
+
+.bg-nokia-better-body {
+  background-image: url("../images/nokia-health.jpg");
+}
+
+.bg-smart-mirror {
+  background-image: url("../images/smart-mirror.JPG");
+}
+
+.bg-n1 {
+  background-image: url("../images/squared/nokia-n1-square.jpg");
+}
+
+.bg-ads-b-mini {
+  background-image: url("../images/ads-b/IMG_0063.JPG");
+}
+
+.bg-z-launcher {
+  background-image: url("../images/squared/z-launcher-day.png");
+}
+
+.bg-smartwatch {
+  background-image: url("../images/moto360.jpg");
+}
+
+.bg-lg-webos-tv {
+  background-image: url("../images/big-webos-tv.jpg");
+}
+
+.bg-face-wall {
+  background-image: url("../images/face-wall.JPG");
+}
+
+.bg-webos3-pre {
+  background-image: url("../images/mochi.jpg");
+}
+
+.bg-touchpad {
+  background-image: url("../images/HP_TouchPad.jpg");
+}
+
+.bg-palm-pre {
+  background-image: url("../images/squared/pre.jpeg");
+}
+
+.bg-bunnycide {
+  background-image: url("../images/bunnycide.png");
+}
+
+.bg-knobs {
+  background-image: url("../images/knobs-ui.png");
+}
+
+.bg-other {
+  background-image: url("../images/");
+}
+.which-box h3 {
+  opacity: 0;
+}
+
+.which-box:hover .child,
+.which-box:focus .child {
+  transform: scale(1.1);
+}
+
+.which-box:hover h3 {
+  opacity: 1;
+}
+
+.which-box:hover .child:before, .which-box:focus .child:before {
+    display: block;
+}
+
+.which-box :hover .hover-text, .which-box :focus .hover-text {
+    display: block;
+}
+
+.main-project-img {
+  max-width: 100%;
+}
+
+.main-project-img.crop {
+  max-width: 100%;
+  /*max-height:600px;*/
+}
+
+.minor-project-img {
+  max-width: 100%;
+}
+
+.minor-project-img.small {
+  max-height:400px;
+}
+
+.minor-image-box h6 {
+  margin-top: -4rem;
+  margin-left: 2rem;
+  color: #ffffff;
+}
+
+.my-code {
+  max-height: 25rem;
+}
